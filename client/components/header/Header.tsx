@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import styles from "./Header.module.css";
 import Cart from "../cart/Cart";
@@ -28,11 +29,14 @@ const Header: React.FC = () => {
         <span>Menu</span>
       </div>
 
-      <img
-        src="https://static.octopuscdn.com/logos/logo.svg"
-        alt="Octopus Energy Logo"
-        className={styles.logo}
-      />
+      <Link href="/" passHref>
+        <img
+          src="https://static.octopuscdn.com/logos/logo.svg"
+          alt="Octopus Energy Logo"
+          className={styles.logo}
+        />
+      </Link>
+
       <div className={styles.cartWrapper}>
         <Cart />
       </div>
