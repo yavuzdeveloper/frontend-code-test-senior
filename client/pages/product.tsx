@@ -7,12 +7,19 @@ import { useProducts } from "../hooks/useProducts";
 import Spinner from "../ui/Spinner";
 
 const Product: React.FC = () => {
-  const { products, loading } = useProducts();
+  const { products, loading, error } = useProducts();
 
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
 
   if (loading) return <Spinner />;
+
+  if (error)
+    return (
+      <div className={styles.error}>
+        Oops! Something went wrong. Please try again later.
+      </div>
+    );
 
   const product = products[0];
 
