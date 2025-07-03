@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "json-graphql-server": "^3.2.1"
+  },
+  "scripts": {
+    "server": "json-graphql-server server/db.js --port 3001",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  }
+}

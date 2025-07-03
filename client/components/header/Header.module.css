@@ -1,0 +1,50 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--siphon);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 32px;
+}
+
+.cartWrapper {
+  display: flex;
+  align-items: center;
+  min-width: 4rem;
+}
+.cartWrapper > :first-child {
+  margin-right: auto;
+}
+.cartWrapper > :only-child {
+  margin-left: auto;
+}
+
+.menuWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menuIcon {
+  stroke: white;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 1rem;
+    box-sizing: content-box;
+  }
+  .menuIcon {
+    display: none;
+  }
+}

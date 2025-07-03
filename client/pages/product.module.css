@@ -1,0 +1,165 @@
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+.imageWrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.textSection {
+  margin-top: 1.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sub {
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 0;
+}
+
+.qtyWrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  vertical-align: middle;
+}
+
+.qtyLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ice);
+  user-select: none;
+}
+
+.qtyControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qtyBtn {
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.decreaseBtn {
+  background-color: var(--plum);
+  color: var(--ice);
+}
+
+.increaseBtn {
+  background-color: var(--sohoLights);
+  color: var(--siphon);
+}
+
+.decreaseBtn:hover {
+  background-color: #f050f8;
+  color: #100030;
+}
+
+.increaseBtn:hover {
+  background-color: var(--purpleHaze);
+}
+
+.qty {
+  font-size: 1.35rem;
+  font-weight: 500;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+.cartBtn {
+  width: 100%;
+  background-color: var(--sohoLights);
+  color: var(--siphon);
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cartBtn:hover {
+  background-color: var(--purpleHaze);
+}
+
+.section {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #ccc;
+  padding: 0;
+}
+
+.specGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+.descriptionWrapper {
+  background-color: var(--hemocyanin);
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  padding: 0.2rem 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .descriptionWrapper {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
